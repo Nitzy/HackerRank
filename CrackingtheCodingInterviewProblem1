@@ -1,0 +1,12 @@
+import Foundation
+
+let input = [5 , 2]
+var numbers = ["1","2","3","4","5"]
+
+let d = input.last
+let k = input.first
+
+var rotated = numbers.suffix(k!-d!)
+var append = numbers.prefix(d!)
+rotated.append(contentsOf: append)
+print(rotated)
